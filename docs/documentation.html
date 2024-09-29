@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Creator - Documentation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="documentation.html">Docs</a></li>
+                <li><a href="demo.html">Demo</a></li>
+                <li><a href="developer_guide.html">Developer Guide</a></li>
+                <li><a href="user_guide.html">User Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Documentation</h1>
+        
+        <h2>Installation</h2>
+        <p>You can install Favicon Creator using pip:</p>
+        <pre><code>pip install favicon-creator</code></pre>
+        
+        <h2>Usage</h2>
+        <h3>Command Line Interface</h3>
+        <p>To use Favicon Creator from the command line:</p>
+        <pre><code>favicon-creator input_image.png output_favicon.ico</code></pre>
+        
+        <h3>Python API</h3>
+        <p>To use Favicon Creator in your Python projects:</p>
+        <pre><code>from favicon_creator import create_favicon
+
+create_favicon('input_image.png', 'output_favicon.ico', sizes=[16, 32, 48, 64])</code></pre>
+        
+        <h2>API Reference</h2>
+        <h3>create_favicon(input_path, output_path, sizes=None)</h3>
+        <ul>
+            <li><strong>input_path</strong> (str): Path to the input image file</li>
+            <li><strong>output_path</strong> (str): Path where the favicon will be saved</li>
+            <li><strong>sizes</strong> (list of int, optional): List of sizes for the favicon. Default is [16, 32, 48, 64]</li>
+        </ul>
+        
+        <h2>Configuration</h2>
+        <p>You can configure Favicon Creator by creating a <code>favicon_config.json</code> file in your project directory:</p>
+        <pre><code>{
+    "default_sizes": [16, 32, 48, 64, 128],
+    "output_format": "ico",
+    "compression_level": 9
+}</code></pre>
+        
+        <h2>Troubleshooting</h2>
+        <p>If you encounter any issues, please check our <a href="https://github.com/burnt-exe/favicon-creator/issues">GitHub Issues</a> page or submit a new issue if your problem isn't already reported.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Skunkworks Projects. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
